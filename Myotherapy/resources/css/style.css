@@ -1,0 +1,510 @@
+/* Basic Setup */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #fff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Reusable Components */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+hr{
+    display: block;
+    height: 2px;
+    background-color: #19ac90 /*#0e6252*/;
+    content: " ";
+    width: 300px;
+    margin: auto;
+}
+
+/* Headings */
+
+h1, h2, h3{
+    font-weight: 300;   
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 280%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+h2{
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin: 30px 0;
+}
+
+h3{
+    font-size: 150%;
+    letter-spacing: 3px;
+}
+
+h4{
+    font-size: 110%;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;   
+    border-radius: 200px;
+    height: 50px;
+    border: 1px solid #19ac90;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link, 
+.btn-full:visited,
+input[type=submit]{
+    background-color: #19ac90 /*#0e6252*/;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #19ac90;
+    
+}
+
+.btn:active,
+.btn:hover,
+input[type=submit]:active,
+input[type=submit]:hover{
+    background-color: #0e6252; 
+    border: 1px solid #0e6252;
+}
+
+.btn-full:active,
+.btn-full:hover,
+{
+    background-color: #0e6252;
+    border: 1px solid #0e6252;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover{
+    color: #fff;
+}
+
+/* Icons */
+
+.icon-big{
+    font-size: 300%;
+    color: #19ac90 /*#0e6252*/;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Header */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Logo */
+
+.logo{
+    float:left;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.logo-top{
+    font-size: 185%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    margin-top: 0;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.logo-bottom{
+    font-size: 70%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+/* Navigation Bar */
+
+.nav-bar{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-bar li{
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active{
+    border-bottom: 2px solid #19ac90 /*#0e6252*/;
+}
+
+/* Main */
+
+.main-box{
+    color: #fff;
+    font-size: 100%;
+    position: absolute;
+    width: 1140px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Mind Body Fitness Section */
+
+.mbf-heading{
+    letter-spacing: 6px;
+    word-spacing: 8px;  
+}
+.box{
+    padding: 0 20px;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    margin-top: 10px;
+}
+
+.long-copy{
+    font-size: 90%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 145%;
+}
+
+.mbf{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Myotherapy Techniques Section */
+
+.myotherapy-techniques{
+    padding: 0;
+}
+
+.techniques-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.techniques-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.techniques-photo{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: #fff;
+}
+
+.techniques-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.03);
+}
+
+.techniques-description{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #19ac90 /*#0e6252*/;
+    text-align: center;
+}
+
+.techniques-description p{
+    line-height: 140%;
+    margin: 0 10px;
+}
+
+.techniques-photo:hover .overlay{
+    opacity: 1; 
+}
+
+/* Fresh Fysique Is For You Section */
+
+.fresh-fysique-for-you{
+    background-color: #f0f0f0;
+}
+
+.fresh-fysique-for-you h1{
+    text-align: center;
+}
+
+.for-you-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 40px;
+}
+
+.for-you-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.b-w-person{
+    width: 40%;
+}
+
+.for-you-list{
+    margin-bottom: 50px;
+    line-height: 150%;
+    word-spacing: 3px;
+}
+
+.for-you-list:last-of-type{
+    margin-bottom: 50px;
+}
+
+
+/* Testimonials */
+
+.testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.testimonials h1{
+    text-align: center;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    margin-top: 20px;
+}
+blockquote{
+    font-style: italic;
+    padding: 4%;
+    margin-top: 20px;
+    line-height: 145%;
+}
+
+cite{
+    margin-top: 15px;
+    display: block;
+}
+
+/* Pricing */
+
+.price-box{
+    position: relative;
+    background-color: #f0f0f0; 
+    border: 1px solid #c7c7c7; 
+    padding-bottom: 20px;
+    transition: transform 0.8s, color 0.8s, background-color 0.8s;
+    margin: 0 25px;
+    text-align: center;
+}
+
+.price-box:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
+    background-size: cover;
+}
+
+.price{
+    font-size: 400%;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #c7c7c7; 
+}
+
+.price-label{
+    font-size: 250%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.pricing .btn{
+    text-align: center;
+}
+
+.initial{
+    margin-top:20px;
+    text-align: center;
+}
+
+/* Enquiry */
+
+.enquiry{
+    background-color: #f0f0f0;
+}
+.enquiry h1{
+    text-align: center;
+}
+
+.enquiry-form{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+input[type=text], 
+input[type=email],
+select, textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{outline: none;}
+
+/* Footer */
+
+footer{
+    background-color: #222;
+    padding-bottom: 30px;
+    font-size: 80%;
+}
+
+footer p{
+    line-height: 145%;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.copyright span{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+footer .logo{
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+.address, .contact{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.icon-instagram{
+    font-size: 170%;
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.icon-instagram:link,
+.icon-instagram:visited{
+    color: #5a5a5a;
+}
+
+.icon-instagram:hover,
+.icon-instagram:active{
+    color: #e95950;
+}
+
+
+
+
+
+
+
+
+
+
+
