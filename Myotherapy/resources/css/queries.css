@@ -1,7 +1,7 @@
 /* Big tablet to 1200px (width smaller than 1140 row) */
 @media only screen and (max-width: 1200px){
     
-    .hero-text-box{
+    .main-box{
         width: 100%;
         padding: 0 2%;
     }
@@ -19,19 +19,19 @@
         width: 80%;
         margin-left: 10%;
     }
-    .steps-box{ margin-top: 10px; }
-    .steps-box:last-child{ margin-top: 10px; }
-    .works-step{ margin-bottom: 40px; }
-    .works-step:last-of-type{ margin-bottom: 60px; }
-    .app-screen{ 50%; }
+    .techniques-photo{ height: 260px; }
+    .for-you-box{ margin-top: 10px; }
+    .for-you-box:last-child{ margin-top: 10px; }
+    .for-you-list{ margin-bottom: 40px; }
+    .b-w-person{ 50%; }
     .icon-small{ width:17px; }
     .city-feature{ font-size: 90%; }
-    .plan-box{
+    .price-box{
         width: 100%;
         margin-left: 0%;
     }
-    .plan-price{ 250%; }
-    .contact-form{ 80%; } 
+    .price{ 250%; }
+    .enquiry-form{ 80%; } 
 }
 
 /* Small phones to small tablets: from 481 to 767px */
@@ -39,33 +39,97 @@
     
     body{ font-size: 16px; }
     section{ padding: 30px 0; }
-    .row, .hero-text-box{ padding: 0 4%; }
+    .row, .main-box{ padding: 0 4%; }
     .col { 
         margin: 0 0 4% 0%;
         width: 100% }
-    .main-nav{ display:none; }
+    .nav-bar{ display:none; }
     .long-copy{
         width: 100%;
-        margin-left: 0%;
+        padding: 0 8px;
+        margin-left: 0;
     }
+    .techniques-photo{ height: 200px; }
+    .for-you-box:first-child{ text-align: center; }
+    
+    .for-you-box:last-child{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .for-you-box .btn{ 
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .price-box{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .price{
+        font-size: 250%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .price-label{
+        font-size: 125%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
     h1{ font-size: 180% }
     h2{ font-size: 150% }
-    .works-step{ margin-bottom:20px; }
-    .works-step:last-of-type{ margin-bottom: 20px; }
-    .steps-box:first-child{ text-align: center; }
-    .app-screen{ 40%; }
-    .works-step div{
-        height: 40px;
-        width: 40px;
-        margin-right: 15px;
-        padding: 4px;
-        font-size: 120%;
-    }
+    .fresh-fysique-for-you h2{ text-align: center; }
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px){
     
     section{ padding: 25px 0; }
-    .contact-form{ width: 100%; }
+    .nav-bar{ display:none; }
+    .long-copy{ padding: 0 4px; }
+    .techniques-photo{ height: 150px; }
+    .techniques-description p{ font-size: 70%; }
+    h4{ font-size: 80%; }
+    .for-you-box:first-child{ text-align: center; }
+    
+    .for-you-box:last-child{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .for-you-list{ font-size: 90%; }
+    
+    .for-you-box .btn{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .price-box{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .price{
+        font-size: 250%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .price-label{
+        font-size: 125%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .enquiry-form{ width: 100%; }
+
 }

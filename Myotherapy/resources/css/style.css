@@ -79,6 +79,7 @@ h4{
     font-size: 110%;
     letter-spacing: 1px;
     margin: 20px 0;
+    text-align: center;
 }
 
 /* Buttons */
@@ -224,14 +225,9 @@ header{
     letter-spacing: 6px;
     word-spacing: 8px;  
 }
+
 .box{
     padding: 0 15px;
-}
-
-.box p{
-    font-size: 90%;
-    line-height: 145%;
-    margin-top: 10px;
 }
 
 .long-copy{
@@ -269,9 +265,48 @@ header{
 .techniques-photo{
     position: relative;
     width: 100%;
+    height: 340px;
     margin: 0;
     overflow: hidden;
     background-color: #000;
+    background-size: cover;
+    color: #fff;
+}
+
+.light{
+    font-weight: 300;
+}
+
+.massage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Shoulder%20Massage%20Cropped.jpg);
+}
+
+.myofascial-release{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Myofascial%20Release%20Cropped.jpg);
+}
+
+.cupping{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Cupping%20Cropped.jpg);
+}
+
+.joint-mobilisation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Joint%20Mobilisation%20Cropped.jpg);
+}
+
+.nerve-mobilisation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Nerve%20Mobilisation%20Cropped.jpg);
+}
+
+.dry-needling{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Dry%20Needling%20Cropped.jpg);
+}
+
+.electro-needling{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Electro%20Needling%20Cropped.jpg);
+}
+
+.exercise-therapy{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Exercise%20Therapy%20Cropped.jpg);
 }
 
 .overlay{
@@ -383,7 +418,6 @@ cite{
 /* Pricing */
 
 .price-box{
-    position: relative;
     background-color: #f0f0f0; 
     border: 1px solid #c7c7c7; 
     padding-bottom: 20px;
