@@ -43,7 +43,35 @@
     .col { 
         margin: 0 0 4% 0%;
         width: 100% }
-    .nav-bar{ display:none; }
+    
+    .nav-bar{ 
+        display:none;
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px; 
+    }
+    
+    .contacts-bar{ display: none; }
+    
+    .mobile-nav-icon{ display: inline-block; }
+    
+    .nav-bar li { display: block; }
+    
+    .nav-bar li a:link,
+    .nav-bar li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .nav-bar{ margin-top: 10px; }
+
+    .sticky .nav-bar li a:link,
+    .sticky .nav-bar li a:visited{ padding: 10px 0; }
+    .sticky .mobile-nav-icon i { color: #5a5a5a; }
+    .sticky .mobile-nav-icon{ margin-top: 10px; }
+    
     .long-copy{
         width: 100%;
         padding: 0 8px;

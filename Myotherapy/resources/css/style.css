@@ -3,8 +3,11 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+html{ scroll-behavior: smooth; }
 
 html, body{
     background-color: #fff;
@@ -94,6 +97,7 @@ input[type=submit]{
     border-radius: 200px;
     height: 50px;
     border: 1px solid #19ac90;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -147,6 +151,7 @@ input[type=submit]:hover{
 /* Header */
 
 header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/leaves-min.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves.jpg);
     background-size: cover;
     background-position: center;
@@ -181,7 +186,7 @@ header{
 
 /* Navigation Bar */
 
-.nav-bar{
+.nav-bar {
     float: right;
     list-style: none;
     margin-top: 20px;
@@ -189,7 +194,7 @@ header{
 
 .nav-bar li{
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
     text-decoration: none;
 }
 
@@ -199,12 +204,80 @@ header{
     text-decoration: none;
     color: #fff;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.5s;
     transition: border-bottom 0.5s;
 }
 
 .nav-bar li a:hover,
 .nav-bar li a:active{
     border-bottom: 2px solid #19ac90 /*#0e6252*/;
+}
+
+.contacts-bar{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+.contacts-bar li{
+    text-decoration: none;
+    text-align: right;
+    color: #fff;
+}
+
+.contacts-bar li:last-child{ margin-top: 15px; }
+
+/* Sticky Navigation */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px #5a5a5a;
+    z-index: 9999;
+}
+
+.sticky .mobile-nav-icon i{ color: #5a5a5a; }
+
+.sticky .nav-bar{ margin-top: 30px; }
+
+.sticky .nav-bar li a:link,
+.sticky .nav-bar li a:visited{
+    padding: 20px 0;
+    color:#5a5a5a;
+}
+
+.sticky .logo{
+    color: #000;
+    margin: 9px 0;
+}
+
+.sticky .logo-top{ 
+    font-size: 80%; 
+    letter-spacing: 6px;
+
+
+}
+.sticky .logo-bottom{ 
+    font-size: 50%;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.sticky .contacts-bar{ display: none; }
+
+/* Mobile Nav */
+.mobile-nav-icon{
+    float:right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
 }
 
 /* Main */
@@ -216,6 +289,7 @@ header{
     width: 1140px;
     top: 60%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -256,6 +330,8 @@ header{
     width: 100%;
 }
 
+.techniques-showcase:first-of-type{ padding-top: 70px; }
+
 .techniques-showcase li{
     display: block;
     float: left;
@@ -278,35 +354,43 @@ header{
 }
 
 .massage{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Shoulder%20Massage%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Shoulder%20Massage%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Shoulder%20Massage%20Cropped-min.jpg);
 }
 
 .myofascial-release{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Myofascial%20Release%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Myofascial%20Release%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Myofascial%20Release%20Cropped-min.jpg);
 }
 
 .cupping{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Cupping%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Cupping%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Cupping%20Cropped-min.jpg);
 }
 
 .joint-mobilisation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Joint%20Mobilisation%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Joint%20Mobilisation%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Joint%20Mobilisation%20Cropped-min.jpg);
 }
 
 .nerve-mobilisation{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Nerve%20Mobilisation%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Nerve%20Mobilisation%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Nerve%20Mobilisation%20Cropped-min.jpg);
 }
 
 .dry-needling{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Dry%20Needling%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Dry%20Needling%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Dry%20Needling%20Cropped-min.jpg);
 }
 
 .electro-needling{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Electro%20Needling%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Electro%20Needling%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Electro%20Needling%20Cropped-min.jpg);
 }
 
 .exercise-therapy{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Exercise%20Therapy%20Cropped.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Exercise%20Therapy%20Cropped-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Exercise%20Therapy%20Cropped-min.jpg);
 }
 
 .overlay{
@@ -318,6 +402,7 @@ header{
     height: 100%;
     width: 100%;
     opacity: 0;
+    -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
     background-color: #fff;
 }
@@ -326,6 +411,7 @@ header{
     opacity: 0.7;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -351,7 +437,7 @@ header{
 /* Fresh Fysique Is For You Section */
 
 .fresh-fysique-for-you{
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
 }
 
 .fresh-fysique-for-you h1{
@@ -387,6 +473,7 @@ header{
 /* Testimonials */
 
 .testimonials{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -417,18 +504,25 @@ cite{
 
 /* Pricing */
 
+.pricing{ background-color: #f4f4f4; }
+
 .price-box{
-    background-color: #f0f0f0; 
+    background-color: #dedede; 
     border: 1px solid #c7c7c7; 
     padding-bottom: 20px;
+    -webkit-transition: color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
+    transition: color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
     transition: transform 0.8s, color 0.8s, background-color 0.8s;
+    transition: transform 0.8s, color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
     margin: 0 25px;
     text-align: center;
 }
 
 .price-box:hover{
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
     background-size: cover;
 }
@@ -455,10 +549,44 @@ cite{
     text-align: center;
 }
 
+/* About */
+
+.about-box{
+    padding: 0 40px;
+}
+
+.about-box:first-child{
+    text-align: right;
+}
+
+.caption{
+    font-size: 80%;
+    line-height: 145%
+}
+
+.about-maddie{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.qualifications{
+    margin-top: 20px;
+    line-height: 160%;
+    font-size: 90%;
+}
+
+.about h3{
+    letter-spacing: 1px;
+    text-align: left;
+}
+
 /* Enquiry */
 
 .enquiry{
-    background-color: #f0f0f0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url(img/leaves-3.jpg);
+    background-size: cover;
 }
 .enquiry h1{
     text-align: center;
@@ -519,21 +647,37 @@ footer .logo{
     margin-left: 50px;
 }
 
-.icon-instagram{
+.ion-logo-instagram{
     font-size: 170%;
     text-decoration: none;
     color: #5a5a5a;
 }
 
-.icon-instagram:link,
-.icon-instagram:visited{
+.ion-logo-instagram:link,
+.ion-logo-instagram:visited{
     color: #5a5a5a;
 }
 
-.icon-instagram:hover,
-.icon-instagram:active{
+.ion-logo-instagram:hover,
+.ion-logo-instagram:active{
     color: #e95950;
 }
+
+/* Animations */
+
+.js--wp-1,
+.js--wp-5{ 
+    opacity: 0; 
+}
+
+.js--wp-1.animated,
+.js--wp-5.animated{ opacity: 1; }
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5{ -webkit-animation-duration: 1s; animation-duration: 1s; }
 
 
 
