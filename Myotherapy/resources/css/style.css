@@ -221,7 +221,8 @@ header{
 .contacts-bar li{
     text-decoration: none;
     text-align: right;
-    color: #fff;
+    color: #fafafa;
+    font-size: 80%;
 }
 
 .contacts-bar li:last-child{ margin-top: 15px; }
@@ -510,20 +511,15 @@ cite{
     background-color: #dedede; 
     border: 1px solid #c7c7c7; 
     padding-bottom: 20px;
-    -webkit-transition: color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
-    transition: color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
-    transition: transform 0.8s, color 0.8s, background-color 0.8s;
-    transition: transform 0.8s, color 0.8s, background-color 0.8s, -webkit-transform 0.8s;
+    transition: color 0.8s, background-color 0.8s, background-image 0.8s;
     margin: 0 25px;
     text-align: center;
 }
 
 .price-box:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
     color: #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-min.jpg);
     background-size: cover;
 }
 
