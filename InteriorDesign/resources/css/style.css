@@ -1,0 +1,468 @@
+/* Purple: #8e44ad */
+/* Dark: #34193f */
+/* Light: #ddc4e8 */
+
+/* ----------------------------------
+-------------------------------------
+BASIC SETUP
+-------------------------------------
+-----------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth; }
+
+html, body{
+    background-color: #fff;
+    color: #606060;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------
+-------------------------------------
+REUSABLE COMPONENTS
+-------------------------------------
+-----------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+hr{
+    width: 10%;
+    margin: 20px 45% 60px 45%;
+    height: 2px;
+    background-color: #8e44ad;
+}
+
+.long-copy{
+    width: 70%;
+    margin: 0 15%;
+    line-height: 145%;
+    text-align: center;
+}
+/* ----------------------------------
+-------------------------------------
+LOGO
+-------------------------------------
+-----------------------------------*/
+.logo-small{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-small .logo-top{
+    font-size: 200%;
+    letter-spacing: 4px;
+}
+
+.logo-small .logo-bottom{
+    font-size: 90%;
+    margin-top: -8px;
+}
+
+/* ----------------------------------
+-------------------------------------
+HEADINGS
+-------------------------------------
+-----------------------------------*/
+h2{
+    text-align: center;
+    font-size: 190%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+h3{
+    font-size: 150%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* ----------------------------------
+-------------------------------------
+HEADER
+-------------------------------------
+-----------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/purple-flower.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+}
+
+.nav-bar{
+    float:right;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.nav-bar li{
+    display: inline-block;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+.nav-bar li a:link,
+.nav-bar li a:visited{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-bottom: solid 2px transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.nav-bar li a:active,
+.nav-bar li a:hover{
+    color: #ddc4e8;
+    border-bottom: solid 2px #ddc4e8;
+}
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 300;
+}
+
+.heading .heading-top{
+    font-size: 900%;
+    letter-spacing: 12px;
+}
+
+.heading .heading-bottom{
+    font-size: 300%;
+    margin-top: -150px;
+}
+
+header i{
+    font-size: 300%;
+    text-align: center;
+    margin-left: 48%;
+    cursor: pointer;
+}
+
+/* ----------------------------------
+-------------------------------------
+BLURB
+-------------------------------------
+-----------------------------------*/
+
+.blurb{
+    background-color: #f2e9f6;
+}
+
+/* ----------------------------------
+-------------------------------------
+PROJECTS
+-------------------------------------
+-----------------------------------*/
+
+.project-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.project-box{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.project-box a:link,
+.project-box a:visited{
+    color: #606060;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: solid 2px transparent;
+    transition: border-bottom 0.2s;
+}
+
+.project-box a:hover,
+.project-box a:active{
+    color: #34193f;
+    border-bottom: solid 2px #34193f;
+}
+
+/* ----------------------------------
+-------------------------------------
+TESTIMONIALS
+-------------------------------------
+-----------------------------------*/
+
+.testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/dewdrops.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.testimonials .row{
+    margin-bottom: 60px;
+}
+
+.testimonials .row:first-child{ margin-bottom: 0; }
+
+.testimonials img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.testimonials p,
+.testimonials blockquote{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    display: block;
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+/* ----------------------------------
+-------------------------------------
+ABOUT
+-------------------------------------
+-----------------------------------*/
+
+.about{
+    background-color: #f2e9f6;
+}
+
+.jovana{
+    border-radius: 50%;
+}
+
+.about-box h2{
+    text-align: left;
+}
+
+.about-box{
+    margin: 70px 0;
+}
+
+.about-box:first-child{
+    text-align: right;
+    padding-right: 60px;
+}
+
+.about-box p{
+    line-height: 145%;
+    margin-top: 20px;
+}
+
+/* ----------------------------------
+-------------------------------------
+CONTACT
+-------------------------------------
+-----------------------------------*/
+
+.contact img{
+    width: 100%;
+}
+
+.social{
+    list-style: none;
+}
+
+.social li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.social li a:link,
+.social li a:visited{ color: #606060; }
+
+.fa-instagram:hover,
+.fa-instagram:active{
+    color: #e95950;
+}
+
+.fa-facebook-f:hover,
+.fa-facebook-f:active{
+    color: #3b5998;
+}
+
+.fa-twitter:hover,
+.fa-twitter:active{
+    color: #55acee;
+}
+
+.contact-details{
+    margin-top: 30px;
+}
+
+/* ----------------------------------
+-------------------------------------
+ENQUIRY FORM
+-------------------------------------
+-----------------------------------*/
+.grey-line{
+    width: 90%;
+    height: 1px;
+    background-color: #ededed;
+    margin: 30px 5%;
+}
+.enquiry-form{
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+input[type=text], 
+input[type=email], 
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{outline: none;}
+
+/* ----------------------------------
+-------------------------------------
+FOOTER
+-------------------------------------
+-----------------------------------*/
+footer{
+    background-color: #4d4d4d;
+    color: #c1c1c1;
+    font-size: 90%;
+}
+
+.follow{ 
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+.follow:link,
+.follow:visited{
+    color: #c1c1c1;
+}
+
+.follow:hover,
+.follow:active{
+    color: #fff;
+}
+
+.instagram-pictures {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
+
+.instagram-pictures:first-child{ margin-left: 25%; }
+.instagram-pictures:last-child{ margin-right: 25%; }
+
+.instagram-pictures img{ width: 100%; }
+
+.footer-nav{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+    text-decoration: none;
+    color: #c1c1c1;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #fff;
+}
+
+footer .social{
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .social li a:link,
+footer .social li a:visited{
+    color: #c1c1c1;
+}
+
+.copyright{
+    color: #7c7c7c;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 80%;
+}
+
+span{ color: #c1c1c1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
