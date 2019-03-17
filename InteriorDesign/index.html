@@ -8,9 +8,12 @@
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
         
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/favicon/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/favicon/apple-touch-icon-114x114.png" />
@@ -33,7 +36,6 @@
         <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-        
         <title>Jovana Designs</title>
 
     </head>
@@ -47,18 +49,18 @@
             <!-- **** NAV BAR + LOGO **** -->
             <!-- ************************ -->
             <div class="row">
-                <div class="logo-small">
+                <nav>
+                <a href="#header" class="logo"><div class="logo-small">
                     <p class="logo-top"><s>JOVANA</s><p>
                     <p class="logo-bottom">DESIGNS<p>
-                </div>
-                <nav>
-                    <ul class="nav-bar">
-                        <li><a href="#header">Projects</a></li>
-                        <li><a href="#techniques">Testimonials</a></li>
+                </div></a>
+                    <ul class="nav-bar js--nav-bar">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <a class="mobile-nav-icon"><i class="icon ion-md-menu"></i></a>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
                 </nav>
             </div>
             
@@ -70,14 +72,14 @@
             </div>
             
             <div class="row">
-                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-down js--scroll-to-blurb"></i>
             </div>
         </header> 
         
         <!-- ************************ -->
         <!-- ******** BLURB ********* -->
         <!-- ************************ -->
-        <section class="blurb">
+        <section class="blurb js--blurb">
             <h2>Creating Beautiful Spaces</h2>
             <hr>
             <p class="long-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate auctor tempor. Nulla ligula dui, lobortis sed egestas nec, aliquet ut ligula. Ut tellus urna, maximus ac luctus luctus, fringilla et lectus. Ut sed commodo enim. Sed porttitor maximus nulla, non tempor dui fringilla non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi.</p>
@@ -86,7 +88,7 @@
         <!-- ************************ -->
         <!-- ****** PROJECTS ******** -->
         <!-- ************************ -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="row">
                 <div class="col span-1-of-3 project-box">
                     <img src="resources/img/project-1-square.jpg" alt="Project 1">
@@ -134,7 +136,7 @@
         <!-- ************************ -->
         <!-- ***** TESTIMONIALS ***** -->
         <!-- ************************ -->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="row">
                 <h2>Client Testimonials</h2>
                 <hr>
@@ -189,7 +191,7 @@
         <!-- ************************ -->
         <!-- ******** ABOUT ********* -->
         <!-- ************************ -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="row">
                 <div class="col span-1-of-2 about-box">
                     <img src="resources/img/jovana.jpg" alt="Jovana Simulija" class="jovana">
@@ -204,13 +206,13 @@
         <!-- ************************ -->
         <!-- ******* CONTACT ******** -->
         <!-- ************************ -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="row">
                 <h2>Contact Details</h2>
                 <hr>
             </div>
             <div class="row contact-details">
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 contacts-text">
                     <p>Business Name:</p>
                     <p>ABN:</p>
                     <br>
@@ -229,7 +231,7 @@
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col span-1-of-2 contacts-image">
                     <img src="resources/img/contact-picture.jpg" alt="Books Image">
                 </div>
             </div>
@@ -313,14 +315,14 @@
                 </div>
             </div>
             <div class="row">
-               <nav>
+               <div>
                     <ul class="footer-nav">
-                        <li><a href="#header">Projects</a></li>
-                        <li><a href="#techniques">Testimonials</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
             <div class="row">
                 <ul class="social">
@@ -333,5 +335,13 @@
                 <p class="copyright"><span>&copy; 2019 JOVANA DESIGNS.</span> WEBSITE BY LAURA CRONIN</p>
             </div>
         </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
+        
     </body>
 </html>

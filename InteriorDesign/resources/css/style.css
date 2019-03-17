@@ -68,6 +68,14 @@ hr{
 LOGO
 -------------------------------------
 -----------------------------------*/
+.logo{ text-decoration: none; }
+
+.logo:link,
+.logo:visited{ color: #fff; }
+
+.logo:hover,
+.logo:active{ color: #ddc4e8; }
+
 .logo-small{
     float: left;
     display: inline-block;
@@ -90,6 +98,13 @@ LOGO
 HEADINGS
 -------------------------------------
 -----------------------------------*/
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 300;
+}
+
 h2{
     text-align: center;
     font-size: 190%;
@@ -149,10 +164,60 @@ header{
     border-bottom: solid 2px #ddc4e8;
 }
 
-h1{
-    text-align: center;
-    margin-top: 150px;
-    font-weight: 300;
+/* Sticky Nav */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px #606060;
+    z-index: 9999;
+}
+
+.sticky .mobile-nav-icon i{ color: #606060; }
+
+.sticky .nav-bar{ 
+    margin-right: 104.5px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sticky .nav-bar li a:link,
+.sticky .nav-bar li a:visited{
+    color:#606060;
+    padding: 15px;
+}
+
+.sticky .logo-small{
+    color: #606060;
+    margin-left: 104.5px;
+}
+
+.sticky .logo-top{ 
+    font-size: 90%; 
+    letter-spacing: 6px;
+}
+
+.sticky .logo-bottom{ 
+    font-size: 50%;
+    margin-top: -4px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+/* Mobile Nav */
+.mobile-nav-icon{
+    float:right;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
 }
 
 .heading .heading-top{
@@ -301,7 +366,7 @@ CONTACT
 -------------------------------------
 -----------------------------------*/
 
-.contact img{
+.contacts-image img{
     width: 100%;
 }
 
