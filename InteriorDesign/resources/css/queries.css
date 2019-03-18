@@ -137,8 +137,13 @@
     .logo-small{ font-size: 70%; }
     .logo-small .logo-bottom{ margin-top: -5px; }
     .heading{ 
-        font-size: 60%;
+        font-size: 50%;
         margin-top: 220px;
     }
-    .heading .heading-bottom{ margin-top: -80px; }
+    .heading .heading-bottom{ margin-top: -60px; }
+    .social li{ margin-left: 30px; }
+    .footer-nav{ font-size: 80%; }
+    .instagram-pictures { width: 15%; }
+    .instagram-pictures:first-child{ margin-left: 12.5%; }
+    .instagram-pictures:last-child{ margin-right: 12.5%; }
 }
