@@ -540,6 +540,11 @@ cite{
     text-align: center;
 }
 
+.pricing .btn-full:link,
+.pricing .btn-full:visited{
+    margin: 0;
+}
+
 .initial{
     margin-top:20px;
     text-align: center;
@@ -596,6 +601,7 @@ cite{
 
 input[type=text], 
 input[type=email],
+input[type=number],
 select, textarea{
     width: 100%;
     padding: 7px;
@@ -658,6 +664,22 @@ footer .logo{
 .ion-logo-instagram:active{
     color: #e95950;
 }
+
+/* Make a Booking */
+.book-header{
+    background: none;
+    height: auto;
+    background-color: #f4f4f4; 
+    padding: 30px 0;
+}
+
+.logo-big{
+    color: #5a5a5a;
+    text-align: center;
+}
+
+.make-a-booking{ text-align: center; }
+
 
 /* Animations */
 

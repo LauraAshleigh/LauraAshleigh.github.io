@@ -134,13 +134,13 @@
 @media only screen and (max-width: 480px){
     section{ padding: 25px 0; }
     .contact-form{ width: 100%; }
-    .logo-small{ font-size: 70%; }
-    .logo-small .logo-bottom{ margin-top: -5px; }
+    .logo-small{ font-size: 60%; }
+    .logo-small .logo-bottom{ margin-top: -4px; }
     .heading{ 
-        font-size: 50%;
-        margin-top: 220px;
+        font-size: 30%;
+        margin-top: 200px;
     }
-    .heading .heading-bottom{ margin-top: -60px; }
+    .heading .heading-bottom{ margin-top: -40px; }
     .social li{ margin-left: 30px; }
     .footer-nav{ font-size: 80%; }
     .instagram-pictures { width: 15%; }
