@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <title>Guess The Number!</title>
+    </head>
+
+    <body>
+        <div class="game-panel clearfix">
+            <h1>Guess The Number!</h1>
+            <form class="panel-guess">
+                <label id="lbl-guess" for="txt-guess">Guess a number between 1 and 100:</label>
+                <input id="txt-guess" name="txt-guess" type="number" min="1" max="100">
+            </form>
+            <button type="button" class="btn-guess" id="btn">Guess</button>
+            <p class="lbl-output">Enter a number above, and click 'Guess'.</p>
+            <p class="lbl-tries">You have 7 tries remaining</p>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
