@@ -560,6 +560,8 @@ cite{
     text-align: right;
 }
 
+.about-box img{ border-radius: 10px; }
+
 .caption{
     font-size: 80%;
     line-height: 145%
