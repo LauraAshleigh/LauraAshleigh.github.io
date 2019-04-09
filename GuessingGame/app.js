@@ -10,7 +10,7 @@ newGame();
 
 function newGame()
 {
-    document.getElementById('txt-guess').textContent = "";
+    document.querySelector('.panel-guess').reset();
     theNumber = Math.floor(Math.random() * 100) + 1;
     document.querySelector('.lbl-tries').textContent = 'You have 7 tries remaining';
     document.querySelector('#lbl-guess').textContent = 'Guess a number between 1 and 100:';
@@ -75,7 +75,7 @@ function checkGuess()
 }
 
 document.querySelector('.btn-guess').addEventListener('click', checkGuess);
-document.getElementById('txt-guess').addEventListener('keyup', function(event){
+document.addEventListener('keypress', function(event){
     if(event.keyCode == 13)
         {
             event.preventDefault();
