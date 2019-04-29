@@ -1,0 +1,314 @@
+/*****************************************
+BASIC SETUP
+*****************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth; }
+
+html, body{
+    background-color: #fff;
+    color: #5a5a5a;
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*****************************************
+REUSABLE COMPONENTS
+*****************************************/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.copy{
+    text-align: center;
+    line-height: 145%;
+}
+
+hr{
+    display: block;
+    height: 2px;
+    background-color: #34495e;
+    content: " ";
+    width: 200px;
+    margin: 30px auto;
+}
+
+.logo{
+    margin-top: 30px;
+    width: 180px;
+    float: left;
+}
+
+/*****************************************
+HEADINGS
+*****************************************/
+
+h1, h2{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 400%;
+    margin-top: 80px;
+    letter-spacing: 4px;
+    word-spacing: 6px;
+    line-height: 135%;
+}
+
+h2{
+    font-size: 210%;
+}
+
+/*****************************************
+HEADER
+*****************************************/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(back.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    height: 90vh;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #34495e;
+}
+
+#bookings{
+    border: solid 2px #fff;
+    border-radius: 20px;
+    padding: 10px 20px;;
+}
+
+#bookings:link,
+#bookings:visited{
+    transition: none;
+}
+
+#bookings:hover,
+#bookings:active{
+    border-bottom: transparent;
+    background-color: #fff;
+    color: #5a5a5a;
+}
+
+header .copy{ font-style: italic; }
+
+/*****************************************
+ABOUT
+*****************************************/
+
+.about-icons{
+    margin-top: 50px;
+}
+
+.fas{ 
+    display: block;
+    color: #34495e;
+    font-size: 250%;
+    margin-bottom: 20px;
+}
+
+/*****************************************
+SERVICES
+*****************************************/
+
+.services{ background: #f5f5f5; }
+
+.services-list{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.service-title{
+    color: #34495e;
+    font-size: 110%;
+}
+
+.service-item{
+    margin-left: 20px;
+    list-style: none;
+}
+
+.terms{ font-size: 80%; }
+
+/*****************************************
+GALLERY
+*****************************************/
+
+insta-gallery img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.insta-gallery{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.btn-follow{
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.btn-follow a:link,
+.btn-follow a:visited{
+    padding: 10px;
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.btn-follow a:hover,
+.btn-follow a:active{
+    font-size: 110%;
+}
+
+/*****************************************
+BOOKINGS
+*****************************************/
+
+.bookings{ background: #f5f5f5; }
+
+.booking-info{
+    margin-top: 20px;
+}
+.booking-form{
+    padding-left: 50px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+input[type=text], 
+input[type=email],
+input[type=number],
+select, textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+input[type=submit]{
+    padding: 10px;
+    cursor: pointer;
+    color: #5a5a5a;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #34495e;
+    color: #fff;
+    border: 1px solid #34495e;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{outline: none;}
+
+/*****************************************
+FOOTER
+*****************************************/
+
+.dark{ 
+    background-color: #3e3e3e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.dark i{
+    background-color: #fff;
+    color: #3e3e3e;
+    padding: 10px;
+    margin: 0 8px;
+    border: solid 2px #fff;
+    border-radius: 200px;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active{
+    background-color: #e95950;
+    color: #fff;
+    border: solid 2px #e95950;
+}
+
+.fa-envelope:hover,
+.fa-envelope:active{
+    background-color: #34495e;
+    color: #fff;
+    border: solid 2px #34495e;
+}
+
+footer{
+    background-color: #222;
+    padding: 30px 0;
+    font-size: 80%;
+}
+
+footer .logo{
+    margin: 0;
+    width: 150px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.copyright span{
+    color: #fff;
+    letter-spacing: 2px;
+}
