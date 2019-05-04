@@ -11,21 +11,46 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="resources/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="resources/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="resources/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="resources/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="resources/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="resources/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="resources/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="resources/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="resources/favicon/mstile-310x310.png" />
+
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="row">
-            <img class="logo" src="resources/img/logo 2.jpg">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a id="bookings" href="#">Bookings</a></li>
+            
+            <nav>
+                <a href="#header"><img class="logo" src="resources/img/logo 2.jpg"></a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#bookings" id="booking">Bookings</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
             </nav>
         </div>
         <div class="row">
@@ -34,7 +59,7 @@
         </div>
     </header>
     
-    <section class="about">
+    <section class="about js--about" id="about">
         <div class="row">
             <h2>About Us</h2>
             <hr>
@@ -64,7 +89,7 @@
         </div>
     </section>
     
-    <section class="services">
+    <section class="services" id="services">
         <div class="row">
             <h2>Services</h2>
             <hr>
@@ -97,7 +122,7 @@
         </div>
     </section>
     
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="row">
             <h2>Gallery</h2>
             <hr>
@@ -138,14 +163,14 @@
         </div>
     </section>
     
-    <section class="bookings">
+    <section class="bookings" id="bookings">
         <div class="row">
             <h2>Bookings</h2>
             <hr>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <p class="booking-info">To make a booking, send an inquiry by submitting this form. <br><br>We will confirm your booking via email within 24 hours. <br><br>Alternatively, call us on 0455 289 949</p>
+                <p class="booking-info">To make a booking, send an inquiry by submitting this form. <br><br>We will confirm your booking via email within 24 hours. <br><br>Alternatively, call us on 0455 289 949.</p>
             </div>
             <div class="col span-2-of-3">
                 <form method="post" action="#" class="booking-form">
@@ -210,7 +235,7 @@
     <footer>
         <div class="row">
             <div class="col span-1-of-3">
-                <img class="logo" src="resources/img/logo%202.jpg">
+                <a href="#header"><img class="logo" src="resources/img/logo%202.jpg"></a>
                 
             </div>
             <div class="col span-1-of-3">
@@ -232,4 +257,12 @@
             <p class="copyright"><span>&copy; 2019 MEREWETHER CAR CARE.</span> WEBSITE BY LAURA CRONIN</p>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>

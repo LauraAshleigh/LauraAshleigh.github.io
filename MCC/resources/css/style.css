@@ -94,8 +94,14 @@ header{
     background-position: center;
     background-attachment: fixed;
     color: #fff;
-    height: 90vh;
+    height: 95vh;
 }
+
+header .copy{ font-style: italic; }
+
+/*****************************************
+NAVIGATION
+*****************************************/
 
 .main-nav{
     float: right;
@@ -123,25 +129,89 @@ header{
     border-bottom: 2px solid #34495e;
 }
 
-#bookings{
+#booking{
     border: solid 2px #fff;
     border-radius: 20px;
-    padding: 10px 20px;;
+    padding: 10px 20px;
 }
 
-#bookings:link,
-#bookings:visited{
+#booking:link,
+#booking:visited{
     transition: none;
 }
 
-#bookings:hover,
-#bookings:active{
+#booking:hover,
+#booking:active{
     border-bottom: transparent;
     background-color: #fff;
     color: #5a5a5a;
 }
 
-header .copy{ font-style: italic; }
+/*****************************************
+STICKY NAVIGATION
+*****************************************/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px #5a5a5a;
+    z-index: 9999;
+}
+
+.sticky .logo{ 
+    margin: 10px 100px;
+    width: 100px;
+}
+.sticky .mobile-nav-icon i{ color: #5a5a5a; }
+
+.sticky .main-nav{ 
+    margin: 20px 100px 15px 0px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 12px 0;
+    color:#5a5a5a;
+}
+
+.sticky #booking{
+    border: none;
+    background-color: none;
+    padding: 0px;
+}
+
+.sticky #booking:link,
+.sticky #booking:visited{
+    padding: 12px 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    transition: border-bottom 0.5s;
+}
+
+.sticky #booking:hover,
+.sticky #booking:active{
+    border-bottom: 2px solid #34495e;
+    background-color: transparent;
+}
+
+/*****************************************
+MOBILE NAVIGATION
+*****************************************/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
 
 /*****************************************
 ABOUT
@@ -185,7 +255,7 @@ SERVICES
 GALLERY
 *****************************************/
 
-insta-gallery img{
+.insta-gallery img{
     width: 100%;
     margin-bottom: 10px;
 }
