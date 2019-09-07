@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -42,10 +41,21 @@ section{
 hr{
     display: block;
     height: 2px;
-    background-color: #19ac90 /*#0e6252*/;
+    background-color: #19ac90;
     content: " ";
-    width: 300px;
+    width: 250px;
     margin: auto;
+}
+
+.mini{
+    width: 100px;
+}
+
+.long-copy{
+    font-size: 90%;
+    width: 60%;
+    margin: 20px 20%;
+    line-height: 145%;
 }
 
 /* Headings */
@@ -73,23 +83,31 @@ h2{
 }
 
 h3{
-    font-size: 110%;
+    font-size: 140%;
     text-align: center;
-    letter-spacing: 3px;
+    font-style: italic;
+/*    letter-spacing: 1px; */
 }
 
 h4{
-    font-size: 110%;
-    letter-spacing: 1px;
-    margin: 20px 0;
+    font-size: 120%;
     text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+h5{
+    font-size: 110%;
+    margin: 20px 70px;
+/*    color: #0e6252;*/
+    font-weight: 400;
 }
 
 /* Buttons */
 
 .btn:link,
-.btn:visited,
-input[type=submit]{
+.btn:visited{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -97,14 +115,12 @@ input[type=submit]{
     border-radius: 200px;
     height: 50px;
     border: 1px solid #19ac90;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link, 
-.btn-full:visited,
-input[type=submit]{
-    background-color: #19ac90 /*#0e6252*/;
+.btn-full:visited{
+    background-color: #19ac90;
     text-align: center;
     color: #fff;
     margin-right: 15px;
@@ -117,9 +133,7 @@ input[type=submit]{
 }
 
 .btn:active,
-.btn:hover,
-input[type=submit]:active,
-input[type=submit]:hover{
+.btn:hover{
     background-color: #0e6252; 
     border: 1px solid #0e6252;
 }
@@ -138,21 +152,50 @@ input[type=submit]:hover{
 
 /* Icons */
 
-.icon-big{
+.icon-social{
+    border-radius: 200px;
+    border: solid 1px #fff;
+    padding: 5px;
+    background-color: #fff;
+    color: #5a5a5a;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.icon-social:hover,
+.icon-social:active{
+    background-color: #19ac90;
+    padding: 5px;
+    border: solid 1px #19ac90;
+    color: #fff;
+}
+
+.icon-mbf{
     font-size: 300%;
-    color: #19ac90 /*#0e6252*/;
+    color: #19ac90;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin: 20px auto 10px auto;
+}
+
+.icon-small {
+    margin-right: 6px;
+}
+
+.icon-contact{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #19ac90;
+    margin-right: 10px;
+    /*Secrets for aligning text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 /* Header */
 
 header{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/leaves-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -184,48 +227,63 @@ header{
     word-spacing: 5px;
 }
 
+/* Contacts Bar */
+
+.contacts-bar{
+    margin-top: 20px;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.contact-info{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-number{ margin-right: 10px; }
+
+#btn-book{
+    border: solid 1px #fff;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+#btn-book:hover,
+#btn-book:active{
+    border: solid 1px #19ac90;
+    background-color: #19ac90;
+}
+
 /* Navigation Bar */
 
-.nav-bar {
-    float: right;
+.nav-bar{
+    display: flex;
     list-style: none;
-    margin-top: 20px;
+    float: right;
+    margin-top: 30px;
 }
 
 .nav-bar li{
-    display: inline-block;
-    margin-left: 30px;
     text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
 }
 
 .nav-bar li a:link,
-.nav-bar li a:visited{
+.nav-bar li a:active{
     padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
     text-decoration: none;
     color: #fff;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.5s;
-    transition: border-bottom 0.5s;
 }
 
 .nav-bar li a:hover,
-.nav-bar li a:active{
-    border-bottom: 2px solid #19ac90 /*#0e6252*/;
+.nav-bar li a:visited{
+    border-bottom: 2px solid #19ac90;
+    color: #fff;
 }
-
-.contacts-bar{
-    float: right;
-    list-style: none;
-    margin-top: 40px;
-}
-.contacts-bar li{
-    text-decoration: none;
-    text-align: right;
-    color: #fafafa;
-    font-size: 80%;
-}
-
-.contacts-bar li:last-child{ margin-top: 15px; }
 
 /* Sticky Navigation */
 
@@ -257,9 +315,8 @@ header{
 .sticky .logo-top{ 
     font-size: 80%; 
     letter-spacing: 6px;
-
-
 }
+
 .sticky .logo-bottom{ 
     font-size: 50%;
     letter-spacing: 2px;
@@ -281,6 +338,12 @@ header{
     color: #fff;
 }
 
+#btn-book-mobile {
+    margin-top: 30px;
+    display: none;
+    margin-left: 50px;
+}
+
 /* Main */
 
 .main-box{
@@ -290,191 +353,88 @@ header{
     width: 1140px;
     top: 60%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-/* Mind Body Fitness Section */
+/* About */
 
-.mbf-heading{
-    letter-spacing: 6px;
-    word-spacing: 8px;  
-}
-
-.box{
-    padding: 0 15px;
-}
-
-.long-copy{
-    font-size: 90%;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    line-height: 145%;
-}
-
-.mbf{
-    margin-top: 30px;
-    text-align: center;
-}
-
-/* Myotherapy Techniques Section */
-
-.myotherapy-techniques{
-    padding: 0;
-}
-
-.techniques-showcase{
-    list-style: none;
-    width: 100%;
-}
-
-.techniques-showcase:first-of-type{ padding-top: 70px; }
-
-.techniques-showcase li{
-    display: block;
-    float: left;
-    width: 25%;
-}
-
-.techniques-photo{
-    position: relative;
-    width: 100%;
-    height: 340px;
-    margin: 0;
-    overflow: hidden;
-    background-color: #000;
+.about{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-cropped-5.jpg);
     background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 
-.light{
-    font-weight: 300;
+.about-boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.massage{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Shoulder%20Massage%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Shoulder%20Massage%20Cropped-min.jpg);
+.about-boxes div{ height: 300px; }
+
+.logo-box{
+    writing-mode: vertical-rl;
+    width: 130px;
+    border: solid 4px #fff;
+    padding-right: 15px;
 }
 
-.myofascial-release{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Myofascial%20Release%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Myofascial%20Release%20Cropped-min.jpg);
-}
+.logo-box .logo-top{ margin-bottom: 0; }
 
-.cupping{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Cupping%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Cupping%20Cropped-min.jpg);
-}
-
-.joint-mobilisation{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Joint%20Mobilisation%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Joint%20Mobilisation%20Cropped-min.jpg);
-}
-
-.nerve-mobilisation{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Nerve%20Mobilisation%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Nerve%20Mobilisation%20Cropped-min.jpg);
-}
-
-.dry-needling{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Dry%20Needling%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Dry%20Needling%20Cropped-min.jpg);
-}
-
-.electro-needling{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Electro%20Needling%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Electro%20Needling%20Cropped-min.jpg);
-}
-
-.exercise-therapy{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/Exercise%20Therapy%20Cropped-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Exercise%20Therapy%20Cropped-min.jpg);
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.image-box img{ 
     height: 100%;
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-    background-color: #fff;
+    margin: 0 auto;
+    border: solid 4px #fff;
 }
 
-.techniques-photo img{
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+.text-box{ 
+    text-align: left;
+    width: 50%;
 }
 
-.techniques-description{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #19ac90 /*#0e6252*/;
+.text-box p{
+    margin: 40px 0;
+    line-height: 145%;
+    font-size: 90%;
+}
+
+.text-box h3{ text-align: left; }
+
+/* Services */
+
+.picture-gallery img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.picture-gallery{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cond-and-serv {
+    line-height: 145%;
+    margin-left: 70px;
+}
+
+.pt-photo-container{
     text-align: center;
 }
 
-.techniques-description p{
-    line-height: 140%;
-    margin: 0 10px;
+.pt-photo{
+    height: 300px;
+    margin-top: 20px;
 }
-
-.techniques-photo:hover .overlay{
-    opacity: 1; 
-}
-
-/* Fresh Fysique Is For You Section */
-
-.fresh-fysique-for-you{
-    background-color: #f4f4f4;
-}
-
-.fresh-fysique-for-you h1{
-    text-align: center;
-}
-
-.for-you-box:first-child{
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 40px;
-}
-
-.for-you-box:last-child{
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
-.b-w-person{
-    width: 40%;
-}
-
-.for-you-list{
-    margin-bottom: 50px;
-    line-height: 150%;
-    word-spacing: 3px;
-}
-
-.for-you-list:last-of-type{
-    margin-bottom: 50px;
-}
-
 
 /* Testimonials */
 
 .testimonials{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -503,120 +463,26 @@ cite{
     display: block;
 }
 
-/* Pricing */
+/* Contact */
 
-.pricing{ background-color: #f4f4f4; }
-
-.price-box{
-    background-color: #dedede; 
-    border: 1px solid #c7c7c7; 
-    padding-bottom: 20px;
-    transition: color 0.8s, background-color 0.8s, background-image 0.8s;
-    margin: 0 25px;
-    text-align: center;
-}
-
-.price-box:hover{
-    color: #fff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2-min.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-min.jpg);
-    background-size: cover;
-}
-
-.price{
-    font-size: 400%;
-    margin-top: 70px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #c7c7c7; 
-}
-
-.price-label{
-    font-size: 250%;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.pricing .btn{
-    text-align: center;
-}
-
-.pricing .btn-full:link,
-.pricing .btn-full:visited{
-    margin: 0;
-}
-
-.initial{
-    margin-top:20px;
-    text-align: center;
-}
-
-/* About */
-
-.about-box{
-    padding: 0 40px;
-}
-
-.about-box:first-child{
-    text-align: right;
-}
-
-.about-box img{ border-radius: 10px; }
-
-.caption{
-    font-size: 80%;
-    line-height: 145%
-}
-
-.about-maddie{
-    margin-top: 20px;
-    margin-bottom: 30px;
+.contact-details {
+    margin-top: 40px;
+    margin-left: 60px;
     line-height: 145%;
-    font-size: 90%;
 }
 
-.qualifications{
-    margin-top: 20px;
-    line-height: 160%;
-    font-size: 90%;
+.contact-detail { margin-bottom: 5px; }
+
+.contact-detail a{
+    text-decoration: none;
+    color: #5a5a5a;
+    border-bottom: solid 1px transparent;
 }
 
-.about h3{
-    letter-spacing: 1px;
-    text-align: left;
+.contact-detail a:hover,
+.contact-detail a:active{
+    border-bottom: solid 1px #5a5a5a;
 }
-
-/* Enquiry */
-
-.enquiry{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url(img/leaves-3.jpg);
-    background-size: cover;
-}
-.enquiry h1{
-    text-align: center;
-}
-
-.enquiry-form{
-    width: 60%;
-    margin: auto;
-    margin-top: 30px;
-}
-
-input[type=text], 
-input[type=email],
-input[type=number],
-select, textarea{
-    width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-}
-
-textarea{
-    height: 100px;
-}
-
-*:focus{outline: none;}
-
 /* Footer */
 
 footer{
@@ -651,53 +517,12 @@ footer .logo{
     margin-left: 50px;
 }
 
-.ion-logo-instagram{
-    font-size: 170%;
-    text-decoration: none;
-    color: #5a5a5a;
-}
-
-.ion-logo-instagram:link,
-.ion-logo-instagram:visited{
-    color: #5a5a5a;
-}
-
-.ion-logo-instagram:hover,
-.ion-logo-instagram:active{
-    color: #e95950;
-}
-
-/* Make a Booking */
-.book-header{
-    background: none;
-    height: auto;
-    background-color: #f4f4f4; 
-    padding: 30px 0;
-}
-
-.logo-big{
-    color: #5a5a5a;
-    text-align: center;
-}
-
-.make-a-booking{ text-align: center; }
 
 
-/* Animations */
 
-.js--wp-1,
-.js--wp-5{ 
-    opacity: 0; 
-}
 
-.js--wp-1.animated,
-.js--wp-5.animated{ opacity: 1; }
 
-.js--wp-1,
-.js--wp-2,
-.js--wp-3,
-.js--wp-4,
-.js--wp-5{ -webkit-animation-duration: 1s; animation-duration: 1s; }
+
 
 
 

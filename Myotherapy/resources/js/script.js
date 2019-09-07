@@ -20,11 +20,11 @@ $(document).ready(function(){
     });
     
     /* Animations on scroll */
-    $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
-    }, {
-        offset: '60%;'
-    });    
+//    $('.js--wp-1').waypoint(function(direction) {
+//        $('.js--wp-1').addClass('animated fadeIn');
+//    }, {
+//        offset: '60%;'
+//    });    
     
     $('.js--wp-2').waypoint(function(direction) {
         $('.js--wp-2').addClass('animated pulse');
@@ -57,12 +57,12 @@ $(document).ready(function(){
         
         nav.slideToggle(200);
         
-        if(icon.hasClass('ion-md-menu')){
-            icon.addClass('ion-md-close');
-            icon.removeClass('ion-md-menu');
+        if(icon.hasClass('fa-bars')){
+            icon.addClass('fa-times');
+            icon.removeClass('fa-bars');
         } else {
-            icon.addClass('ion-md-menu');
-            icon.removeClass('ion-md-close');
+            icon.addClass('fa-bars');
+            icon.removeClass('fa-times');
         }
     });
     

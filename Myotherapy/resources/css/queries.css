@@ -69,6 +69,11 @@
     .contacts-bar{ display: none; }
     
     .mobile-nav-icon{ display: inline-block; }
+    #btn-book-mobile{ 
+        display: inline-block;
+        font-size: 90%;
+        border: solid 1px #fff; 
+    }
     
     .nav-bar li { display: block; }
     
@@ -86,6 +91,13 @@
     .sticky .nav-bar li a:visited{ padding: 10px 0; }
     .sticky .mobile-nav-icon i { color: #5a5a5a; }
     .sticky .mobile-nav-icon{ margin-top: 10px; }
+    .sticky #btn-book-mobile{ 
+        margin-top: 10px;
+        font-size: 80%;
+        margin-left: 70px;
+        color: #5a5a5a;
+        border: solid 1px #5a5a5a;
+    }
     
     .btn{ margin-bottom: 10px; }
     .long-copy{
