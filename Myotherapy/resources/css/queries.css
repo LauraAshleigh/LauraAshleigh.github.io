@@ -111,4 +111,6 @@
     .image-box{ display: none; }
     .logo-box{ display: none; }
     .text-box{ width: 85%; }
+    .mobile-nav-bar{ margin-right: 50px; }
+    .btn-ghost{ margin-top: 10px; }
 }
