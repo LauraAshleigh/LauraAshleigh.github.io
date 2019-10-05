@@ -46,28 +46,52 @@
             <!-- ********** NAV ********* -->
             <!-- ************************ -->
             <nav>
-                <div class="row">
-                    <div class="contacts-bar">
-                        <div class="contact-info">
-                            <a href="https://www.instagram.com/madelaine.pitkanen/" target="_blank"><i class="icon-social fab fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/freshfysique/" target="_blank"><i class="icon-social fab fa-facebook"></i></a>
+                <div class="row navigation-container">
+                    <div class="logo-container">
+<!--
+                        <img class='logo' src='resources/img/Final-V1-White-Cropped.png2.png'>
+                        <img class='logo-black' src='resources/img/Final-V1-Black-Cropped.png2.png'>
+-->
+                        <img class='logo' src='resources/img/Final-V2-White-Cropped.png2.png'>
+                        <a href='#home'><img class='logo-black' src='resources/img/Final-V1-Black-Cropped.png2.png'></a>
+                    </div>
+                    <div class='contacts-and-nav'>
+                        <div class="contacts-bar">
+                            <div class="contact-info">
+                                <a href="https://www.instagram.com/madelaine.pitkanen/" target="_blank"><i class="icon-social fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/freshfysique/" target="_blank"><i class="icon-social fab fa-facebook"></i></a>
+                            </div>
+                            <a href='tel:0404711990' class="contact-info" id="contact-number">0404 711 990</a>
+                            <a class="contact-info" id="btn-book" href="#">Book Online</a>
+                            
                         </div>
-                        <a href='tel:0404711990' class="contact-info" id="contact-number">0404 711 990</a>
-                        <a class="contact-info" id="btn-book" href="#">Book Online</a>
+                        
+                        <ul class="nav-bar">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        
+                        
                     </div>
-                    <div class="logo">
-                        <p class="logo-top">FRESH<br>FYSIQUE<p>
-                        <p class="logo-bottom">mind . body . fitness<p>
+<!--                    <a class="contact-info" id="btn-book-mobile" href="#">Book Online</a>-->
+                    <div class='mobile-icon-and-nav'>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
+                    
                     </div>
-                    <ul class="nav-bar js--nav-bar">
+                    
+                </div>
+                <div class='row mobile-nav-container'>
+                    <ul class='mobile-nav-bar js--nav-bar'>
+                        <li><a href='#'>Book Online</a></li>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <a class="contact-info" id="btn-book-mobile" href="#">Book Online</a>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
                 </div>
             </nav>
                     
@@ -109,14 +133,20 @@
         <section class="about">
             <div class="row about-boxes">
                 <div class='logo-box'>
-                    <p class="logo-top">FRESH<br>FYSIQUE<p>
+                    <img class='logo' src='resources/img/Final-V1-White-Cropped.png2.png'>
                 </div>
                 <div class='image-box'>
-                    <img src="resources/img/Maddie.jpg" >
+                    <img src="resources/img/Maddie-2.jpeg" >
                 </div>
                 <div class='text-box'>
                     <h3>Madelaine Pitkanen</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id congue nulla, ac tempus orci. Etiam feugiat quam vel magna auctor, sit amet ultricies libero pharetra. Maecenas et magna et lectus lobortis mollis. Morbi eget odio vehicula, fringilla urna eget, accumsan est. Morbi quis tortor eu quam lacinia semper quis at sapien.</p>
+                    <p>
+                        Madelaine’s journey in the health industry kicked off in 2009 with a certificate in Personal Training. Her education and knowledge is forever evolving having since completed a Bachelor of Health Science (Myotherapy), pre and post natal training and abdominal scar immersion training.<br/> 
+
+                        Madelaine's has inspired many personal training and manual therapy clients. From huge successes with weight loss, fitness & strength gains, to musculoskeletal rehabilitation and pain modulation.<br/> 
+
+                        Madelaine loves all outdoor activities, such as running, surfing, standup paddle boarding, snowboarding, hiking and fishing!
+                    </p>
                     <a class="contact-info" id="btn-book" href="#">Book Online</a>
 <!--
                     <h3>Qualifications</h3>
@@ -217,7 +247,7 @@
                     </ul>
                 </div>
                 <div class="pt-photo-container" class="col span-1-of-2">
-                    <img class="pt-photo" src="resources/img/services-3.jpg">
+                    <img class="pt-photo" src="resources/img/maddie-medicine-ball.jpg">
                 </div>
             </div>
         </section>
@@ -316,9 +346,8 @@
         <footer>
             <div class="row">
                 <div class="col span-1-of-3">
-                     <div class="logo">
-                        <p class="logo-top">FRESH<br>FYSIQUE<p>
-                        <p class="logo-bottom">mind . body . fitness<p>
+                     <div class="logo-container">
+                        <a href='#home'><img class='logo' src='resources/img/Final-V2-White-Cropped.png2.png'></a>
                     </div>
                 </div>
                 <div class="col span-1-of-3">
@@ -329,11 +358,13 @@
                 </div>
                 <div class="col span-1-of-3">
                     <div class="contact">
-                        <p>Phone: 0404 711 990</p><br>
-                        <p>Email: mp@freshfysique.com.au</p><br>
-                        <a href="https://www.instagram.com/madelaine.pitkanen/" target="_blank"><i class="icon-social icon-small fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/freshfysique/" target="_blank"><i class="icon-social icon-small fab fa-facebook"></i></a>
-                        <a class="contact-info" id="btn-book" href="#">Book Online</a>
+                        <p>Phone: <a href='tel:0404711990'>0404 711 990</a></p><br>
+                        <p>Email: <a href='mailto:mp@freshfysique.com.au'>mp@freshfysique.com.au</a></p><br>
+                        <div class='footer-buttons'>
+                            <a href="https://www.instagram.com/madelaine.pitkanen/" target="_blank"><i class="icon-social icon-small fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/freshfysique/" target="_blank"><i class="icon-social icon-small fab fa-facebook"></i></a>
+                            <a class="contact-info" id="btn-book" href="#">Book Online</a>
+                        </div>
                     </div>
                 </div>
             </div>
