@@ -82,7 +82,12 @@
     h2{ font-size: 150% }
     h4{ margin-top: 50px; }
     
-    blockquote{ margin-top: 0;}
+    blockquote{ 
+        margin-top: 0;
+        font-size: 110%;
+    }
+    
+    .text-box p{ font-size: 100%; }
     
     .service-buttons{ margin-top: 50px; }
     .picture-gallery{ display: none; }
@@ -100,11 +105,14 @@
 @media only screen and (max-width: 480px){
     
     section{ padding: 25px 0; }
-    .long-copy{ padding: 0 4px; }
+    .long-copy{ 
+        padding: 0 4px;
+        font-size: 110%;
+    }
     .image-box{ display: none; }
     .logo-box{ display: none; }
     .text-box{ width: 85%; }
     .mobile-nav-bar{ margin-right: 30px; }
-    .btn-ghost{ margin-top: 10px; }
+/*    .btn-full{ margin-bottom: 10px; }*/
     
 }
