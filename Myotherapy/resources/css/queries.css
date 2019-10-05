@@ -78,6 +78,11 @@
         margin-left: 0;
     }
     
+    .about-boxes div { 
+        height: auto;
+        margin-right: 5px;
+    }
+    
     h1{ font-size: 180% }
     h2{ font-size: 150% }
     h4{ margin-top: 50px; }
@@ -87,7 +92,10 @@
         font-size: 110%;
     }
     
-    .text-box p{ font-size: 100%; }
+    .text-box p{ 
+        font-size: 100%;
+        margin: 20px 0;
+    }
     
     .service-buttons{ margin-top: 50px; }
     .picture-gallery{ display: none; }
@@ -105,6 +113,8 @@
 @media only screen and (max-width: 480px){
     
     section{ padding: 25px 0; }
+    h1{ font-size: 140% }
+    h2{ font-size: 130% }
     .long-copy{ 
         padding: 0 4px;
         font-size: 110%;
