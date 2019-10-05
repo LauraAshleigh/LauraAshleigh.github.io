@@ -35,7 +35,6 @@
     }
     
     .logo-box .logo{ width: 200%; }
-    
     .text-box p { font-size: 80%; }
     
     .picture-gallery{ padding: 10px; }
@@ -60,7 +59,7 @@
         align-items: center;
     }
     
-    .logo-container{ width: 160px; }
+    .logo-container{ width: 120px; }
     .nav-bar{ display:none; }
     .contacts-bar{ display: none; }
 
@@ -72,12 +71,6 @@
     .sticky .nav-bar li a:link,
     .sticky .nav-bar li a:visited{ padding: 10px 0; }
     .sticky .mobile-nav-icon i { color: #5a5a5a; }
-    .sticky #btn-book-mobile{ 
-        margin-top: 0px;
-        font-size: 80%;
-        color: #5a5a5a;
-        border: solid 1px #5a5a5a;
-    }
     
     .long-copy{
         width: 100%;
@@ -112,5 +105,6 @@
     .logo-box{ display: none; }
     .text-box{ width: 85%; }
     .mobile-nav-bar{ margin-right: 30px; }
-    .btn-ghost{ margin-top: 20px; }
+    .btn-ghost{ margin-top: 10px; }
+    
 }

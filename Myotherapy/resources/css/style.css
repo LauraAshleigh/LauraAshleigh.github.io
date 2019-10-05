@@ -60,9 +60,7 @@ hr{
 
 /* Headings */
 
-h1, h2, h3{
-    font-weight: 300;   
-}
+h1, h2, h3{ font-weight: 300; }
 
 h1{
     margin-top: 0;
@@ -99,7 +97,6 @@ h4{
 h5{
     font-size: 110%;
     margin: 20px 70px;
-/*    color: #0e6252;*/
     font-weight: 400;
 }
 
@@ -107,7 +104,8 @@ h5{
 
 .btn:link,
 .btn:visited{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;   
@@ -126,10 +124,7 @@ h5{
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
-    color: #19ac90;
-    
-}
+.btn-ghost:visited{ color: #19ac90; }
 
 .btn:active,
 .btn:hover{
@@ -138,16 +133,13 @@ h5{
 }
 
 .btn-full:active,
-.btn-full:hover,
-{
+.btn-full:hover{
     background-color: #0e6252;
     border: 1px solid #0e6252;
 }
 
 .btn-ghost:active,
-.btn-ghost:hover{
-    color: #fff;
-}
+.btn-ghost:hover{ color: #fff; }
 
 /* Icons */
 
@@ -175,9 +167,7 @@ h5{
     margin: 20px auto 10px auto;
 }
 
-.icon-small {
-    margin-right: 6px;
-}
+.icon-small { margin-right: 6px; }
 
 .icon-contact{
     display: inline-block;
@@ -333,13 +323,16 @@ header{
     margin-top: -100px;
     margin-right: 70px;
 }
+
 .mobile-nav-bar li{ padding: 5px; }
+
 .mobile-nav-bar li a{
     text-decoration: none;
     color: #fff; 
 }
 
 .sticky .mobile-nav-bar { margin-top: -60px; }
+
 .sticky .mobile-nav-bar li a{ color: #5a5a5a; }
 
 /* Main */
@@ -352,6 +345,12 @@ header{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* About */
@@ -398,12 +397,9 @@ header{
     flex-direction: column;
 }
 
-.text-box a{
-    align-self: flex-start;
-}
+.text-box a{ align-self: flex-start; }
 
 .text-box p{
-/*    margin: 30px 0;*/
     line-height: 145%;
     font-size: 90%;
 }
@@ -432,9 +428,7 @@ header{
     margin-left: 70px;
 }
 
-.pt-photo-container{
-    text-align: center;
-}
+.pt-photo-container{ text-align: center; }
 
 .pt-photo{
     height: 300px;
@@ -450,9 +444,7 @@ header{
     color: #fff;
 }
 
-.testimonials h1{
-    text-align: center;
-}
+.testimonials h1{ text-align: center; }
 
 blockquote:before{
     content: "\201C";
@@ -489,9 +481,8 @@ cite{
 }
 
 .contact-detail a:hover,
-.contact-detail a:active{
-    border-bottom: solid 1px #5a5a5a;
-}
+.contact-detail a:active{ border-bottom: solid 1px #5a5a5a; }
+
 /* Footer */
 
 footer{
@@ -500,9 +491,7 @@ footer{
     font-size: 80%;
 }
 
-footer p{
-    line-height: 145%;
-}
+footer p{ line-height: 145%; }
 
 .copyright{
     text-align: center;
@@ -536,21 +525,3 @@ footer .logo-container{
     display: flex;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
