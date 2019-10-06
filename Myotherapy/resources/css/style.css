@@ -106,6 +106,7 @@ h5{
 .btn:visited{
     display: flex;
     align-items: center;
+    text-align: center;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;   
@@ -118,9 +119,7 @@ h5{
 .btn-full:link, 
 .btn-full:visited{
     background-color: #19ac90;
-    text-align: center;
     color: #fff;
-    margin-right: 15px;
 }
 
 .btn-ghost:link,
@@ -140,6 +139,18 @@ h5{
 
 .btn-ghost:active,
 .btn-ghost:hover{ color: #fff; }
+
+#btn-book{
+    border: solid 1px #fff;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+#btn-book:hover,
+#btn-book:active{
+    border: solid 1px #19ac90;
+    background-color: #19ac90;
+    color: #fff;
+}
 
 /* Icons */
 
@@ -186,6 +197,7 @@ h5{
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3.jpg);
     background-size: cover;
+    object-fit: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
@@ -234,16 +246,7 @@ header{
 
 #contact-number{ margin-right: 10px; }
 
-#btn-book{
-    border: solid 1px #fff;
-    transition: background-color 0.2s, border 0.2s;
-}
 
-#btn-book:hover,
-#btn-book:active{
-    border: solid 1px #19ac90;
-    background-color: #19ac90;
-}
 
 /* Navigation Bar */
 
@@ -353,11 +356,14 @@ header{
     align-items: center;
 }
 
+.main-buttons .btn-full{ margin-right: 15px; }
+
 /* About */
 
 .about{ 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-cropped-5.jpg);
     background-size: cover;
+    object-fit: cover;
     background-attachment: fixed;
     color: #fff;
 }
@@ -368,10 +374,8 @@ header{
     text-align: center;
 }
 
-.about-boxes div{ height: 400px; }
-
 .logo-box{
-    width: 130px;
+    flex-basis: 15%;
     border: solid 4px #fff;
     display: flex;
     align-items: center;
@@ -380,18 +384,25 @@ header{
 
 .logo-box .logo{
     transform: rotate(90deg);
-    width: 300%;
+    width: 250%;
+}
+
+.image-box{ 
+    flex-basis: 25%;
+    border: solid 4px #fff;
+    background-color: #fff;
 }
 
 .image-box img{ 
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    border: solid 4px #fff;
+    margin: auto; 
+    object-fit: cover;
 }
 
 .text-box{ 
     text-align: left;
-    width: 50%;
+    flex-basis: 50%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -423,6 +434,10 @@ header{
     justify-content: center;
 }
 
+#myo-btn{ margin-right: 15px; }
+
+.service-buttons .btn-full{ width: 168px; }
+
 .cond-and-serv {
     line-height: 145%;
     margin-left: 70px;
@@ -440,6 +455,7 @@ header{
 .testimonials{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
     background-size: cover;
+    object-fit: cover;
     background-attachment: fixed;
     color: #fff;
 }

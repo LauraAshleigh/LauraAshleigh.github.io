@@ -28,16 +28,10 @@
         width: 80%;
         margin-left: 10%;
     }
-    
-    .about-boxes div { 
-        height: 350px;
-        margin-right: 5px;
-    }
-    
-    .logo-box .logo{ width: 200%; }
-    .text-box p { font-size: 80%; }
-    
+
     .picture-gallery{ padding: 10px; }
+    
+    .service-buttons .btn-full{ width: 160px; }
     
     footer .logo-container{ margin-top: 10px; }
 
@@ -78,10 +72,15 @@
         margin-left: 0;
     }
     
-    .about-boxes div { 
-        height: auto;
-        margin-right: 5px;
+    .service-buttons .btn-full{ width: 145px; }
+    
+    .logo-box{ display: none; }
+    .image-box{ 
+        flex-basis: 40%;
+        margin-right: 10px;
+        align-self: center;
     }
+    .text-box{ flex-basis: 60%; }
     
     h1{ font-size: 180% }
     h2{ font-size: 150% }
@@ -100,12 +99,17 @@
     .service-buttons{ margin-top: 50px; }
     .picture-gallery{ display: none; }
     
-    footer{ font-size: 100%; }
-    .addres, .contact{ margin-top: 0; }
-    footer .logo-container { 
-        margin-left: 35px;
-        margin-bottom: -20px;
+    footer{ 
+        font-size: 100%;
+        text-align: center;
     }
+    .footer-buttons{ justify-content: center; }
+    .address, .contact{ 
+        margin-top: 0;
+        margin-left: 0;
+    }
+    footer .logo-container {  margin: 10px auto -20px auto; }
+    #fresh-fysique{ display: none; }
     
 }
 
@@ -119,10 +123,9 @@
         padding: 0 4px;
         font-size: 110%;
     }
+    
     .image-box{ display: none; }
-    .logo-box{ display: none; }
-    .text-box{ width: 85%; }
+    .text-box{ flex-basis: 100%; }
     .mobile-nav-bar{ margin-right: 30px; }
-/*    .btn-full{ margin-bottom: 10px; }*/
     
 }
