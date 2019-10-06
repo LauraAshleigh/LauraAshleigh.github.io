@@ -140,13 +140,13 @@ h5{
 .btn-ghost:active,
 .btn-ghost:hover{ color: #fff; }
 
-#btn-book{
+.btn-book{
     border: solid 1px #fff;
     transition: background-color 0.2s, border 0.2s;
 }
 
-#btn-book:hover,
-#btn-book:active{
+.btn-book:hover,
+.btn-book:active{
     border: solid 1px #19ac90;
     background-color: #19ac90;
     color: #fff;
@@ -361,7 +361,7 @@ header{
 /* About */
 
 .about{ 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-cropped-5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-min.jpg);
     background-size: cover;
     object-fit: cover;
     background-attachment: fixed;
