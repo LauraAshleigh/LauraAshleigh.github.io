@@ -48,9 +48,19 @@
         width: 100% 
     }
     
+/*
+    header{ background-size: 100%; }
+    .about{ background-size: 100%; }
+    .testimonials{ background-size: 100%; }
+*/
+    
+    header, .about, .testimonials{ background-attachment: initial; }
+    
+/*
     header{ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3-mobile-2.jpg); }
     .about{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-mobile-2.jpg); }
     .testimonials{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-mobile-2.jpg); }
+*/
     
     .navigation-container { 
         padding: 10px 30px;
