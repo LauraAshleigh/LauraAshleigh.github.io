@@ -1,14 +1,12 @@
 /* Big tablet to 1200px (width smaller than 1140 row) */
 @media only screen and (max-width: 1200px){
     
+    .row{ padding: 0 2%; }
+    .navigation-container { padding-top: 20px; }
     .main-box{
         width: 100%;
         padding: 0 2%;
-    }
-    
-    .row{ padding: 0 2%; } 
-    
-    .navigation-container { padding-top: 20px; }
+    } 
 
 }
     
@@ -30,7 +28,6 @@
     }
 
     .picture-gallery{ padding: 10px; }
-    
     .service-buttons .btn-full{ width: 160px; }
     
     footer .logo-container{ margin-top: 10px; }
@@ -48,25 +45,22 @@
         width: 100% 
     }
     
-/*
-    header{ background-size: 100%; }
-    .about{ background-size: 100%; }
-    .testimonials{ background-size: 100%; }
-*/
+    h1{ font-size: 180% }
+    h2{ font-size: 150% }
+    h4{ margin-top: 50px; }
     
     header, .about, .testimonials{ background-attachment: initial; }
-    
-/*
-    header{ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3-mobile-2.jpg); }
-    .about{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-mobile-2.jpg); }
-    .testimonials{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-mobile-2.jpg); }
-*/
+    .about{ 
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/leaves-7-min.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-7-min.jpg); 
+    }
     
     .navigation-container { 
         padding: 10px 30px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
-    
     .logo-container{ width: 120px; }
     .nav-bar{ display: none; }
     .contacts-bar{ display: none; }
@@ -75,7 +69,6 @@
     .mobile-nav-bar{ display: none; }
     
     .sticky .nav-bar{ margin-top: 10px; }
-
     .sticky .nav-bar li a:link,
     .sticky .nav-bar li a:visited{ padding: 10px 0; }
     .sticky .mobile-nav-icon i { color: #5a5a5a; }
@@ -86,45 +79,46 @@
         margin-left: 0;
     }
     
-    .service-buttons .btn-full{ width: 145px; }
-    
     .logo-box{ display: none; }
     .image-box{ 
+        -ms-flex-preferred-size: 40%; 
         flex-basis: 40%;
         margin-right: 10px;
+        -ms-flex-item-align: center;
         align-self: center;
     }
-    .text-box{ flex-basis: 60%; }
+    .text-box{ -ms-flex-preferred-size: 60%; flex-basis: 60%; }
+    .text-box p{ 
+        font-size: 100%;
+        margin: 20px 0;
+    }
     
-    h1{ font-size: 180% }
-    h2{ font-size: 150% }
-    h4{ margin-top: 50px; }
+    .picture-gallery{ display: none; }
+    .service-buttons{ margin-top: 50px; }
+    .service-buttons .btn-full{ width: 145px; }
+    
     
     blockquote{ 
         margin-top: 0;
         font-size: 110%;
     }
     
-    .text-box p{ 
-        font-size: 100%;
-        margin: 20px 0;
-    }
-    
-    .service-buttons{ margin-top: 50px; }
-    .picture-gallery{ display: none; }
-    
     footer{ 
         font-size: 100%;
         text-align: center;
     }
-    .footer-buttons{ justify-content: center; }
+    .footer-buttons{ 
+        -webkit-box-pack: center;
+        -ms-flex-pack: center; 
+        justify-content: center; 
+    }
     .address, .contact{ 
         margin-top: 0;
         margin-left: 0;
     }
     footer .logo-container {  margin: 10px auto -20px auto; }
     #fresh-fysique{ display: none; }
-    
+
 }
 
 /* Small phones: from 0 to 480px */
@@ -138,8 +132,12 @@
         font-size: 110%;
     }
     
-    .image-box{ display: none; }
-    .text-box{ flex-basis: 100%; }
     .mobile-nav-bar{ margin-right: 30px; }
+    
+    .image-box{ display: none; }
+    .text-box{ 
+        -ms-flex-preferred-size: 100%; 
+        flex-basis: 100%; 
+    }
     
 }
