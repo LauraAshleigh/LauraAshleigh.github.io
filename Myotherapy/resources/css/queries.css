@@ -48,9 +48,9 @@
         width: 100% 
     }
     
-    header{ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3-mobile.jpg); }
-    .about{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-mobile.jpg); }
-/*    .testimonials{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-mobile.jpg); }*/
+    header{ background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3-mobile-2.jpg); }
+    .about{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-mobile-2.jpg); }
+    .testimonials{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2-mobile-2.jpg); }
     
     .navigation-container { 
         padding: 10px 30px;
@@ -58,7 +58,7 @@
     }
     
     .logo-container{ width: 120px; }
-    .nav-bar{ display:none; }
+    .nav-bar{ display: none; }
     .contacts-bar{ display: none; }
 
     .mobile-nav-icon{ display: inline-block; }
