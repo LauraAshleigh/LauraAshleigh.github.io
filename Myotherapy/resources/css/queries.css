@@ -49,10 +49,10 @@
     h2{ font-size: 150% }
     h4{ margin-top: 50px; }
     
-    header, .about, .testimonials{ background-attachment: initial; }
+    header, .about, .testimonials{ background-attachment: scroll; }
     .about{ 
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/leaves-7-min.jpg); 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-7-min.jpg); 
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/plant-branch.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/plant-branch.jpg); 
     }
     
     .navigation-container { 

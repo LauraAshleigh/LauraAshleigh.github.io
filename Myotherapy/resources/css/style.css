@@ -203,8 +203,8 @@ btn-book:active{
 /* Header */
 
 header{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/leaves-3.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/leaves-3.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/succulent.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/succulent.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -403,8 +403,8 @@ header{
 /* About */
 
 .about{ 
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-7-min.jpg); 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-7-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/plant-branch.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/plant-branch.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -471,7 +471,10 @@ header{
     flex-direction: column;
 }
 
-.text-box a{ -ms-flex-item-align: start; align-self: flex-start; }
+.text-box a{ 
+    -ms-flex-item-align: start; 
+    align-self: flex-start; 
+}
 
 .text-box p{
     line-height: 145%;
@@ -520,8 +523,8 @@ header{
 /* Testimonials */
 
 .testimonials{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/leaves-2.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/leaves-2.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/dark-green-leaves.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/dark-green-leaves.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
