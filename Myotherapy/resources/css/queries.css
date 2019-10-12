@@ -16,9 +16,10 @@
     
     body{ font-size: 18px; }
     section{ padding: 60px 0; }
+    .hicaps-logo{ width: 170px; }
     .nav-bar li{ 
         font-size: 90%;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .contacts-bar { font-size: 90%; }
 
@@ -30,8 +31,11 @@
     .picture-gallery{ padding: 10px; }
     .service-buttons .btn-full{ width: 160px; }
     
-    footer .logo-container{ margin-top: 10px; }
-
+    footer .logo-container { 
+        width: 150px;
+        margin-bottom: 28px;
+    }
+    footer .hicaps-logo { width: 130px; }
 }
 
 /* Small phones to small tablets: from 481 to 767px */
@@ -61,13 +65,18 @@
         -ms-flex-align: center;
         align-items: center;
     }
-    .logo-container{ width: 120px; }
+    .logo-container{ 
+        width: 120px;
+        margin-top: 15px;
+    }
+    
     .nav-bar{ display: none; }
     .contacts-bar{ display: none; }
 
     .mobile-nav-icon{ display: inline-block; }
     .mobile-nav-bar{ display: none; }
     
+    .sticky .logo-black{ margin-top: -15px; }
     .sticky .nav-bar{ margin-top: 10px; }
     .sticky .nav-bar li a:link,
     .sticky .nav-bar li a:visited{ padding: 10px 0; }
@@ -107,16 +116,16 @@
         font-size: 100%;
         text-align: center;
     }
+    .logo-and-hicaps, .address, .contact { 
+        padding: 25px;
+        margin-bottom: 0;
+    }
+    .footer-contact{ margin: 0; }
     .footer-buttons{ 
         -webkit-box-pack: center;
         -ms-flex-pack: center; 
         justify-content: center; 
     }
-    .address, .contact{ 
-        margin-top: 0;
-        margin-left: 0;
-    }
-    footer .logo-container {  margin: 10px auto -20px auto; }
     #fresh-fysique{ display: none; }
 
 }
