@@ -1,0 +1,166 @@
+/* Big tablet to 1200px (width smaller than 1140 row) */
+@media only screen and (max-width: 1200px){
+    
+    .row{ padding: 0 2%; }
+    .navigation-container { padding-top: 20px; }
+    .main-box{
+        width: 100%;
+        padding: 0 2%;
+    } 
+
+}
+    
+    
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+    
+    body{ font-size: 18px; }
+    section{ padding: 60px 0; }
+    .nav-bar li{ 
+        font-size: 90%;
+        margin-left: 20px;
+    }
+    .contacts-bar { font-size: 90%; }
+
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .picture-gallery{ padding: 10px; }
+    .service-buttons .btn-full{ width: 160px; }
+    
+    footer .logo-container { width: 150px; }
+}
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px){
+    
+    body{ font-size: 16px; }
+    section{ padding: 30px 0; }
+    .row, .main-box{ padding: 0 4%; }
+    .col { 
+        margin: 0 0 4% 0%;
+        width: 100% 
+    }
+    
+    h1{ font-size: 350% }
+    h2{ font-size: 150% }
+    h4{ margin-top: 50px; }
+    
+    header, .about, .testimonials{ background-attachment: scroll; }
+    .about{ 
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/plant-branch.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/plant-branch.jpg); 
+    }
+    
+    .navigation-container { 
+        padding: 10px 30px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .logo-container{ 
+        width: 120px;
+        margin-top: 15px;
+    }
+    
+    .nav-bar{ display: none; }
+    .contacts-bar{ display: none; }
+
+    .mobile-nav-icon{ display: inline-block; }
+    .mobile-nav-bar{ display: none; }
+    
+    .sticky .logo-black{ margin-top: -15px; }
+    .sticky .nav-bar{ margin-top: 10px; }
+    .sticky .nav-bar li a:link,
+    .sticky .nav-bar li a:visited{ padding: 10px 0; }
+    .sticky .mobile-nav-icon i { color: #5a5a5a; }
+    
+    .health-fund-rebates{ margin-top: 50px; }
+    .health-insurance{ 
+        padding: 0 4px;
+        font-size: 110%;
+        text-align: center;
+    }
+    .long-copy{
+        width: 100%;
+        padding: 0 8px;
+        margin-left: 0;
+    }
+    
+    .logo-box{ display: none; }
+    .image-box{ 
+        -ms-flex-preferred-size: 40%; 
+        flex-basis: 40%;
+        margin-right: 10px;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+    .text-box{ -ms-flex-preferred-size: 60%; flex-basis: 60%; }
+    .text-box p{ 
+        font-size: 100%;
+        margin: 20px 0;
+    }
+    
+    .picture-gallery{ display: none; }
+    .service-buttons{ margin-top: 50px; }
+    .service-buttons .btn-full{ width: 145px; }
+    
+    
+    blockquote{ 
+        margin-top: 0;
+        font-size: 110%;
+    }
+    
+    .contact-details{ 
+        width: fit-content;
+        margin: 40px auto 0 auto;
+    }
+    
+    .map{ width: 100%; }
+    
+    footer{ 
+        font-size: 100%;
+        text-align: center;
+    }
+    .footer-logo, .address, .contact { 
+        padding: 25px;
+        margin-bottom: 0;
+    }
+    .footer-contact{ margin: 0; }
+    .footer-buttons{ 
+        -webkit-box-pack: center;
+        -ms-flex-pack: center; 
+        justify-content: center; 
+    }
+    #fresh-fysique{ display: none; }
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+    
+    section{ padding: 25px 0; }
+    h1{ font-size: 300% }
+    h2{ font-size: 130% }
+    .long-copy{ 
+        padding: 0 4px;
+        font-size: 110%;
+    }
+    
+    .mobile-nav-bar{ margin-right: 30px; }
+    
+    .image-box{ display: none; }
+    .text-box{ 
+        -ms-flex-preferred-size: 100%; 
+        flex-basis: 100%; 
+    }
+    
+    .health-insurance{ 
+        padding: 0 4px;
+        font-size: 110%; 
+        text-align: center;
+    }
+    
+}
